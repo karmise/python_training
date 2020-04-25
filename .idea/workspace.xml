@@ -19,12 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="472f2ecf-39bf-42fb-a77f-dcf4d2b36a63" name="Default Changelist" comment="rename">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/python_training.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="472f2ecf-39bf-42fb-a77f-dcf4d2b36a63" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +59,21 @@
       <option name="presentableId" value="Default" />
       <updated>1587826164965</updated>
     </task>
+    <task id="LOCAL-00001" summary="upd description">
+      <created>1587828849848</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587828849848</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Create Pycharm project">
+      <created>1587828929456</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587828929457</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -75,16 +86,27 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="rename" />
-    <option name="LAST_COMMIT_MESSAGE" value="rename" />
+    <MESSAGE value="upd description" />
+    <MESSAGE value="Create Pycharm project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create Pycharm project" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="341" y="30" width="747" height="780" key="CommitChangelistDialog2" timestamp="1587828631179">
+    <state x="178" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587831242571">
       <screen x="0" y="30" width="1440" height="780" />
     </state>
-    <state x="341" y="30" width="747" height="780" key="CommitChangelistDialog2/0.30.1440.780@0.30.1440.780" timestamp="1587828631179" />
+    <state x="178" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.30.1440.780@0.30.1440.780" timestamp="1587831242571" />
+    <state x="341" y="30" width="747" height="780" key="CommitChangelistDialog2" timestamp="1587828929379">
+      <screen x="0" y="30" width="1440" height="780" />
+    </state>
+    <state x="341" y="30" width="747" height="780" key="CommitChangelistDialog2/0.30.1440.780@0.30.1440.780" timestamp="1587828929379" />
+    <state x="134" y="93" width="1152" height="657" key="DiffContextDialog" timestamp="1587828748091">
+      <screen x="0" y="30" width="1440" height="780" />
+    </state>
+    <state x="134" y="93" width="1152" height="657" key="DiffContextDialog/0.30.1440.780@0.30.1440.780" timestamp="1587828748091" />
     <state x="139" y="93" width="1152" height="657" key="MergeDialog" timestamp="1587827927412">
       <screen x="0" y="30" width="1440" height="780" />
     </state>
@@ -93,6 +115,10 @@
       <screen x="0" y="30" width="1440" height="780" />
     </state>
     <state x="526" y="115" width="377" height="613" key="RollbackChangesDialog/0.30.1440.780@0.30.1440.780" timestamp="1587828145465" />
+    <state x="105" y="72" width="1117" height="571" key="Vcs.Push.Dialog.v2" timestamp="1587829040495">
+      <screen x="0" y="30" width="1440" height="780" />
+    </state>
+    <state x="105" y="72" width="1117" height="571" key="Vcs.Push.Dialog.v2/0.30.1440.780@0.30.1440.780" timestamp="1587829040495" />
     <state x="525" y="336" width="389" height="171" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587827997401">
       <screen x="0" y="30" width="1440" height="780" />
     </state>
