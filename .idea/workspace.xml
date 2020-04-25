@@ -19,7 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="472f2ecf-39bf-42fb-a77f-dcf4d2b36a63" name="Default Changelist" comment="" />
+    <list default="true" id="472f2ecf-39bf-42fb-a77f-dcf4d2b36a63" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/python_training.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python_training.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_add_Group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_add_group.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,7 +49,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -69,7 +73,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in test_add_Group.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in test_add_group.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -79,13 +83,13 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_add_Group.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_add_group.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests in test_add_Group.py" />
+        <item itemvalue="Python tests.Unittests in test_add_group.py" />
       </list>
     </recent_temporary>
   </component>
@@ -135,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587833637002</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="pep8 fixes">
+      <created>1587834216700</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1587834216700</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -157,17 +168,18 @@
     <MESSAGE value="workspace" />
     <MESSAGE value="test recording" />
     <MESSAGE value="change" />
-    <option name="LAST_COMMIT_MESSAGE" value="change" />
+    <MESSAGE value="pep8 fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="pep8 fixes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="178" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587832748531">
       <screen x="0" y="30" width="1440" height="780" />
     </state>
     <state x="178" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.30.1440.780@0.30.1440.780" timestamp="1587832748531" />
-    <state x="341" y="30" width="747" height="780" key="CommitChangelistDialog2" timestamp="1587833636942">
+    <state x="341" y="30" width="747" height="780" key="CommitChangelistDialog2" timestamp="1587834216639">
       <screen x="0" y="30" width="1440" height="780" />
     </state>
-    <state x="341" y="30" width="747" height="780" key="CommitChangelistDialog2/0.30.1440.780@0.30.1440.780" timestamp="1587833636942" />
+    <state x="341" y="30" width="747" height="780" key="CommitChangelistDialog2/0.30.1440.780@0.30.1440.780" timestamp="1587834216639" />
     <state x="134" y="93" width="1152" height="657" key="DiffContextDialog" timestamp="1587828748091">
       <screen x="0" y="30" width="1440" height="780" />
     </state>
@@ -176,6 +188,22 @@
       <screen x="0" y="30" width="1440" height="780" />
     </state>
     <state x="503" y="178" width="424" height="487" key="FileChooserDialogImpl/0.30.1440.780@0.30.1440.780" timestamp="1587832584605" />
+    <state width="1417" height="211" key="GridCell.Tab.0.bottom" timestamp="1587834421284">
+      <screen x="0" y="30" width="1440" height="780" />
+    </state>
+    <state width="1417" height="211" key="GridCell.Tab.0.bottom/0.30.1440.780@0.30.1440.780" timestamp="1587834421284" />
+    <state width="1417" height="211" key="GridCell.Tab.0.center" timestamp="1587834421283">
+      <screen x="0" y="30" width="1440" height="780" />
+    </state>
+    <state width="1417" height="211" key="GridCell.Tab.0.center/0.30.1440.780@0.30.1440.780" timestamp="1587834421283" />
+    <state width="1417" height="211" key="GridCell.Tab.0.left" timestamp="1587834421282">
+      <screen x="0" y="30" width="1440" height="780" />
+    </state>
+    <state width="1417" height="211" key="GridCell.Tab.0.left/0.30.1440.780@0.30.1440.780" timestamp="1587834421282" />
+    <state width="1417" height="211" key="GridCell.Tab.0.right" timestamp="1587834421283">
+      <screen x="0" y="30" width="1440" height="780" />
+    </state>
+    <state width="1417" height="211" key="GridCell.Tab.0.right/0.30.1440.780@0.30.1440.780" timestamp="1587834421283" />
     <state x="139" y="93" width="1152" height="657" key="MergeDialog" timestamp="1587827927412">
       <screen x="0" y="30" width="1440" height="780" />
     </state>
@@ -184,14 +212,14 @@
       <screen x="0" y="30" width="1440" height="780" />
     </state>
     <state x="526" y="115" width="377" height="613" key="RollbackChangesDialog/0.30.1440.780@0.30.1440.780" timestamp="1587828145465" />
-    <state x="224" y="55" width="992" height="733" key="SettingsEditor" timestamp="1587834009412">
+    <state x="224" y="55" width="992" height="733" key="SettingsEditor" timestamp="1587834306813">
       <screen x="0" y="30" width="1440" height="780" />
     </state>
-    <state x="224" y="55" width="992" height="733" key="SettingsEditor/0.30.1440.780@0.30.1440.780" timestamp="1587834009412" />
-    <state x="105" y="72" width="1117" height="571" key="Vcs.Push.Dialog.v2" timestamp="1587833650677">
+    <state x="224" y="55" width="992" height="733" key="SettingsEditor/0.30.1440.780@0.30.1440.780" timestamp="1587834306813" />
+    <state x="105" y="72" width="1117" height="571" key="Vcs.Push.Dialog.v2" timestamp="1587834237282">
       <screen x="0" y="30" width="1440" height="780" />
     </state>
-    <state x="105" y="72" width="1117" height="571" key="Vcs.Push.Dialog.v2/0.30.1440.780@0.30.1440.780" timestamp="1587833650677" />
+    <state x="105" y="72" width="1117" height="571" key="Vcs.Push.Dialog.v2/0.30.1440.780@0.30.1440.780" timestamp="1587834237282" />
     <state x="525" y="336" width="389" height="171" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587827997401">
       <screen x="0" y="30" width="1440" height="780" />
     </state>
