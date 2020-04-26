@@ -20,6 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="472f2ecf-39bf-42fb-a77f-dcf4d2b36a63" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/contact.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_add_contact.py" afterDir="false" />
     </list>
@@ -246,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587915725652</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="empty value test(contacts)">
+      <created>1587918738690</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1587918738690</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -279,17 +287,18 @@
     <MESSAGE value="add comments to methods" />
     <MESSAGE value="add helper methods" />
     <MESSAGE value="pep8 refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="pep8 refactor" />
+    <MESSAGE value="empty value test(contacts)" />
+    <option name="LAST_COMMIT_MESSAGE" value="empty value test(contacts)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="178" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587898374246">
       <screen x="0" y="30" width="1440" height="780" />
     </state>
     <state x="178" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.30.1440.780@0.30.1440.780" timestamp="1587898374246" />
-    <state x="341" y="30" width="747" height="780" key="CommitChangelistDialog2" timestamp="1587915725599">
+    <state x="341" y="30" width="747" height="780" key="CommitChangelistDialog2" timestamp="1587918738635">
       <screen x="0" y="30" width="1440" height="780" />
     </state>
-    <state x="341" y="30" width="747" height="780" key="CommitChangelistDialog2/0.30.1440.780@0.30.1440.780" timestamp="1587915725599" />
+    <state x="341" y="30" width="747" height="780" key="CommitChangelistDialog2/0.30.1440.780@0.30.1440.780" timestamp="1587918738635" />
     <state x="134" y="93" width="1152" height="657" key="DiffContextDialog" timestamp="1587828748091">
       <screen x="0" y="30" width="1440" height="780" />
     </state>
@@ -298,22 +307,22 @@
       <screen x="0" y="30" width="1440" height="780" />
     </state>
     <state x="503" y="178" width="424" height="487" key="FileChooserDialogImpl/0.30.1440.780@0.30.1440.780" timestamp="1587832584605" />
-    <state width="1417" height="152" key="GridCell.Tab.0.bottom" timestamp="1587918188568">
+    <state width="1417" height="152" key="GridCell.Tab.0.bottom" timestamp="1587920999927">
       <screen x="0" y="30" width="1440" height="780" />
     </state>
-    <state width="1417" height="152" key="GridCell.Tab.0.bottom/0.30.1440.780@0.30.1440.780" timestamp="1587918188568" />
-    <state width="1417" height="152" key="GridCell.Tab.0.center" timestamp="1587918188567">
+    <state width="1417" height="152" key="GridCell.Tab.0.bottom/0.30.1440.780@0.30.1440.780" timestamp="1587920999927" />
+    <state width="1417" height="152" key="GridCell.Tab.0.center" timestamp="1587920999926">
       <screen x="0" y="30" width="1440" height="780" />
     </state>
-    <state width="1417" height="152" key="GridCell.Tab.0.center/0.30.1440.780@0.30.1440.780" timestamp="1587918188567" />
-    <state width="1417" height="152" key="GridCell.Tab.0.left" timestamp="1587918188567">
+    <state width="1417" height="152" key="GridCell.Tab.0.center/0.30.1440.780@0.30.1440.780" timestamp="1587920999926" />
+    <state width="1417" height="152" key="GridCell.Tab.0.left" timestamp="1587920999926">
       <screen x="0" y="30" width="1440" height="780" />
     </state>
-    <state width="1417" height="152" key="GridCell.Tab.0.left/0.30.1440.780@0.30.1440.780" timestamp="1587918188567" />
-    <state width="1417" height="152" key="GridCell.Tab.0.right" timestamp="1587918188568">
+    <state width="1417" height="152" key="GridCell.Tab.0.left/0.30.1440.780@0.30.1440.780" timestamp="1587920999926" />
+    <state width="1417" height="152" key="GridCell.Tab.0.right" timestamp="1587920999927">
       <screen x="0" y="30" width="1440" height="780" />
     </state>
-    <state width="1417" height="152" key="GridCell.Tab.0.right/0.30.1440.780@0.30.1440.780" timestamp="1587918188568" />
+    <state width="1417" height="152" key="GridCell.Tab.0.right/0.30.1440.780@0.30.1440.780" timestamp="1587920999927" />
     <state x="139" y="93" width="1152" height="657" key="MergeDialog" timestamp="1587827927412">
       <screen x="0" y="30" width="1440" height="780" />
     </state>
