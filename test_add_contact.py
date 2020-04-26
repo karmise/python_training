@@ -13,14 +13,18 @@ class TestAddContact(unittest.TestCase):
 
     def test_add_contact(self):
         wd = self.wd
+        # open_home_page
         wd.get("http://localhost/addressbook/index.php")
+        # login
         wd.find_element_by_name("user").click()
         wd.find_element_by_name("user").clear()
         wd.find_element_by_name("user").send_keys("admin")
         wd.find_element_by_name("pass").clear()
         wd.find_element_by_name("pass").send_keys("secret")
         wd.find_element_by_xpath("//input[@value='Login']").click()
+        # open_add_contact_page
         wd.find_element_by_link_text("add new").click()
+        # fill_contact_page
         wd.find_element_by_name("firstname").click()
         wd.find_element_by_name("firstname").clear()
         wd.find_element_by_name("firstname").send_keys("tqwet")
@@ -75,8 +79,11 @@ class TestAddContact(unittest.TestCase):
         wd.find_element_by_name("notes").click()
         wd.find_element_by_name("notes").clear()
         wd.find_element_by_name("notes").send_keys("votes")
+        # submit_contact_creation
         wd.find_element_by_xpath("(//input[@name='submit'])[2]").click()
+        # return_to_home_page
         wd.find_element_by_link_text("home page").click()
+        # logout
         wd.find_element_by_link_text("Logout").click()
 
     def is_element_present(self, how, what):
