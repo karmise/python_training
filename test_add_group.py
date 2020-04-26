@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import unittest
-
+from group import Group
 from selenium import webdriver
 from selenium.common.exceptions import NoAlertPresentException
 from selenium.common.exceptions import NoSuchElementException
@@ -23,19 +23,19 @@ def open_groups_page(wd):
     wd.find_element_by_link_text("groups").click()
 
 
-def create_group(wd, name, header, footer):
+def create_group(wd, group):
     # init group creation
     wd.find_element_by_name("new").click()
     # fill group form
     wd.find_element_by_name("group_name").click()
     wd.find_element_by_name("group_name").clear()
-    wd.find_element_by_name("group_name").send_keys(name)
+    wd.find_element_by_name("group_name").send_keys(group.name)
     wd.find_element_by_name("group_header").click()
     wd.find_element_by_name("group_header").clear()
-    wd.find_element_by_name("group_header").send_keys(header)
+    wd.find_element_by_name("group_header").send_keys(group.header)
     wd.find_element_by_name("group_footer").click()
     wd.find_element_by_name("group_footer").clear()
-    wd.find_element_by_name("group_footer").send_keys(footer)
+    wd.find_element_by_name("group_footer").send_keys(group.footer)
     # submit group creation
     wd.find_element_by_name("submit").click()
 
@@ -58,7 +58,7 @@ class TestAddGroup(unittest.TestCase):
         open_home_page(wd)
         login(wd, username="admin", password="secret")
         open_groups_page(wd)
-        create_group(wd, name="fwegwg", header="sdsdgsdg", footer="sdgwet")
+        create_group(wd, Group(name="fwegwg", header="sdsdgsdg", footer="sdgwet"))
         return_to_groups_page(wd)
         logout(wd)
 
@@ -67,7 +67,7 @@ class TestAddGroup(unittest.TestCase):
         open_home_page(wd)
         login(wd, username="admin", password="secret")
         open_groups_page(wd)
-        create_group(wd, name="", header="", footer="")
+        create_group(wd, Group(name="", header="", footer=""))
         return_to_groups_page(wd)
         logout(wd)
 
