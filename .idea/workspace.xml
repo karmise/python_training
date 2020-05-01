@@ -56,9 +56,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test_add_group.py">
+  <component name="RunManager" selected="Python tests.pytest in test_add_contact.py">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -133,8 +133,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests in test_add_group.py" />
         <item itemvalue="Python tests.pytest in test_add_contact.py" />
+        <item itemvalue="Python tests.Unittests in test_add_group.py" />
         <item itemvalue="Python.decor" />
       </list>
     </recent_temporary>
@@ -304,7 +304,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588337272746</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="add test methods in class">
+      <created>1588338617160</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1588338617160</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -342,17 +349,18 @@
     <MESSAGE value="refactor test_add_group" />
     <MESSAGE value="remove wd = self.wd from tests" />
     <MESSAGE value="remove wd" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove wd" />
+    <MESSAGE value="add test methods in class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add test methods in class" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="178" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588023594820">
+    <state x="178" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588341164081">
       <screen x="0" y="30" width="1440" height="780" />
     </state>
-    <state x="178" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.30.1440.780@0.30.1440.780" timestamp="1588023594820" />
-    <state x="341" y="30" width="747" height="780" key="CommitChangelistDialog2" timestamp="1588337272683">
+    <state x="178" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.30.1440.780@0.30.1440.780" timestamp="1588341164081" />
+    <state x="341" y="30" width="747" height="780" key="CommitChangelistDialog2" timestamp="1588338617092">
       <screen x="0" y="30" width="1440" height="780" />
     </state>
-    <state x="341" y="30" width="747" height="780" key="CommitChangelistDialog2/0.30.1440.780@0.30.1440.780" timestamp="1588337272683" />
+    <state x="341" y="30" width="747" height="780" key="CommitChangelistDialog2/0.30.1440.780@0.30.1440.780" timestamp="1588338617092" />
     <state x="134" y="93" width="1152" height="657" key="DiffContextDialog" timestamp="1587828748091">
       <screen x="0" y="30" width="1440" height="780" />
     </state>
@@ -361,22 +369,22 @@
       <screen x="0" y="30" width="1440" height="780" />
     </state>
     <state x="503" y="178" width="424" height="487" key="FileChooserDialogImpl/0.30.1440.780@0.30.1440.780" timestamp="1587832584605" />
-    <state width="1417" height="213" key="GridCell.Tab.0.bottom" timestamp="1588338560123">
+    <state width="1417" height="189" key="GridCell.Tab.0.bottom" timestamp="1588341247310">
       <screen x="0" y="30" width="1440" height="780" />
     </state>
-    <state width="1417" height="213" key="GridCell.Tab.0.bottom/0.30.1440.780@0.30.1440.780" timestamp="1588338560123" />
-    <state width="1417" height="213" key="GridCell.Tab.0.center" timestamp="1588338560122">
+    <state width="1417" height="189" key="GridCell.Tab.0.bottom/0.30.1440.780@0.30.1440.780" timestamp="1588341247310" />
+    <state width="1417" height="189" key="GridCell.Tab.0.center" timestamp="1588341247310">
       <screen x="0" y="30" width="1440" height="780" />
     </state>
-    <state width="1417" height="213" key="GridCell.Tab.0.center/0.30.1440.780@0.30.1440.780" timestamp="1588338560122" />
-    <state width="1417" height="213" key="GridCell.Tab.0.left" timestamp="1588338560122">
+    <state width="1417" height="189" key="GridCell.Tab.0.center/0.30.1440.780@0.30.1440.780" timestamp="1588341247310" />
+    <state width="1417" height="189" key="GridCell.Tab.0.left" timestamp="1588341247309">
       <screen x="0" y="30" width="1440" height="780" />
     </state>
-    <state width="1417" height="213" key="GridCell.Tab.0.left/0.30.1440.780@0.30.1440.780" timestamp="1588338560122" />
-    <state width="1417" height="213" key="GridCell.Tab.0.right" timestamp="1588338560122">
+    <state width="1417" height="189" key="GridCell.Tab.0.left/0.30.1440.780@0.30.1440.780" timestamp="1588341247309" />
+    <state width="1417" height="189" key="GridCell.Tab.0.right" timestamp="1588341247310">
       <screen x="0" y="30" width="1440" height="780" />
     </state>
-    <state width="1417" height="213" key="GridCell.Tab.0.right/0.30.1440.780@0.30.1440.780" timestamp="1588338560122" />
+    <state width="1417" height="189" key="GridCell.Tab.0.right/0.30.1440.780@0.30.1440.780" timestamp="1588341247310" />
     <state x="139" y="93" width="1152" height="657" key="MergeDialog" timestamp="1587827927412">
       <screen x="0" y="30" width="1440" height="780" />
     </state>
@@ -385,10 +393,10 @@
       <screen x="0" y="30" width="1440" height="780" />
     </state>
     <state x="526" y="115" width="377" height="613" key="RollbackChangesDialog/0.30.1440.780@0.30.1440.780" timestamp="1587828145465" />
-    <state x="305" y="60" width="992" height="733" key="SettingsEditor" timestamp="1588024589014">
+    <state x="305" y="60" width="992" height="733" key="SettingsEditor" timestamp="1588341089710">
       <screen x="0" y="30" width="1440" height="780" />
     </state>
-    <state x="305" y="60" width="992" height="733" key="SettingsEditor/0.30.1440.780@0.30.1440.780" timestamp="1588024589014" />
+    <state x="305" y="60" width="992" height="733" key="SettingsEditor/0.30.1440.780@0.30.1440.780" timestamp="1588341089710" />
     <state x="105" y="72" width="1117" height="571" key="Vcs.Push.Dialog.v2" timestamp="1588337279748">
       <screen x="0" y="30" width="1440" height="780" />
     </state>
