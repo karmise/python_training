@@ -3,12 +3,20 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import NoAlertPresentException
-from contact import Contact
+from model.contact import Contact
+from fixture.application import Application
 import unittest
+import pytest
 
 
-def open_home_page(wd):
-    wd.get("http://localhost/addressbook/index.php")
+@pytest.fixture()
+def app(request):
+    fixture = Application()
+    request.addfinalizer(fixture.destroy)
+    return fixture
+
+def test_add_contact():
+    app.session.login(username="admin", password="secret")
 
 
 def login(wd, username, password):
