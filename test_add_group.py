@@ -6,12 +6,14 @@ from selenium.common.exceptions import NoAlertPresentException
 from selenium.common.exceptions import NoSuchElementException
 
 
-def open_home_page(wd):
+def open_home_page(self):
+    wd = self.wd
     wd.get("http://localhost/addressbook/index.php")
 
 
-def login(wd, username, password):
-    open_home_page(wd)
+def login(self, username, password):
+    wd = self.wd
+    open_home_page(self)
     wd.find_element_by_name("user").click()
     wd.find_element_by_name("user").clear()
     wd.find_element_by_name("user").send_keys(username)
@@ -20,12 +22,14 @@ def login(wd, username, password):
     wd.find_element_by_xpath("//input[@value='Login']").click()
 
 
-def open_groups_page(wd):
+def open_groups_page(self):
+    wd = self.wd
     wd.find_element_by_link_text("groups").click()
 
 
-def create_group(wd, group):
-    open_groups_page(wd)
+def create_group(self, group):
+    wd = self.wd
+    open_groups_page(self)
     # init group creation
     wd.find_element_by_name("new").click()
     # fill group form
@@ -40,14 +44,16 @@ def create_group(wd, group):
     wd.find_element_by_name("group_footer").send_keys(group.footer)
     # submit group creation
     wd.find_element_by_name("submit").click()
-    return_to_groups_page(wd)
+    return_to_groups_page(self)
 
 
-def return_to_groups_page(wd):
+def return_to_groups_page(self):
+    wd = self.wd
     wd.find_element_by_link_text("group page").click()
 
 
-def logout(wd):
+def logout(self):
+    wd = self.wd
     wd.find_element_by_link_text("Logout").click()
 
 
@@ -57,16 +63,14 @@ class TestAddGroup(unittest.TestCase):
         self.wd.implicitly_wait(30)
 
     def test_add_group(self):
-        wd = self.wd
-        login(wd, username="admin", password="secret")
-        create_group(wd, Group(name="fwegwg", header="sdsdgsdg", footer="sdgwet"))
-        logout(wd)
+        login(self, username="admin", password="secret")
+        create_group(self, Group(name="fwegwg", header="sdsdgsdg", footer="sdgwet"))
+        logout(self)
 
     def test_add_empty_group(self):
-        wd = self.wd
-        login(wd, username="admin", password="secret")
+        login(self, username="admin", password="secret")
         create_group(wd, Group(name="", header="", footer=""))
-        logout(wd)
+        logout(self)
 
     def is_element_present(self, how, what):
         try:
