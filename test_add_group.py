@@ -69,7 +69,7 @@ class TestAddGroup(unittest.TestCase):
 
     def test_add_empty_group(self):
         login(self, username="admin", password="secret")
-        create_group(wd, Group(name="", header="", footer=""))
+        create_group(self, Group(name="", header="", footer=""))
         logout(self)
 
     def is_element_present(self, how, what):
