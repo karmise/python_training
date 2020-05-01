@@ -20,9 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="472f2ecf-39bf-42fb-a77f-dcf4d2b36a63" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/fixture/session.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fixture/group.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fixture/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/application.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -333,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588357379319</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Defined session class">
+      <created>1588358441834</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1588358441834</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -349,7 +357,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="upd description" />
     <MESSAGE value="Create Pycharm project" />
     <MESSAGE value="workspace" />
     <MESSAGE value="test recording" />
@@ -374,17 +381,18 @@
     <MESSAGE value="add test methods in class" />
     <MESSAGE value="add fixture" />
     <MESSAGE value="add zone packages" />
-    <option name="LAST_COMMIT_MESSAGE" value="add zone packages" />
+    <MESSAGE value="Defined session class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Defined session class" />
   </component>
   <component name="WindowStateProjectService">
     <state x="178" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588341164081">
       <screen x="0" y="30" width="1440" height="780" />
     </state>
     <state x="178" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.30.1440.780@0.30.1440.780" timestamp="1588341164081" />
-    <state x="341" y="30" width="747" height="780" key="CommitChangelistDialog2" timestamp="1588357379244">
+    <state x="341" y="30" width="747" height="780" key="CommitChangelistDialog2" timestamp="1588358441781">
       <screen x="0" y="30" width="1440" height="780" />
     </state>
-    <state x="341" y="30" width="747" height="780" key="CommitChangelistDialog2/0.30.1440.780@0.30.1440.780" timestamp="1588357379244" />
+    <state x="341" y="30" width="747" height="780" key="CommitChangelistDialog2/0.30.1440.780@0.30.1440.780" timestamp="1588358441781" />
     <state x="134" y="93" width="1152" height="657" key="DiffContextDialog" timestamp="1587828748091">
       <screen x="0" y="30" width="1440" height="780" />
     </state>
@@ -393,22 +401,22 @@
       <screen x="0" y="30" width="1440" height="780" />
     </state>
     <state x="503" y="178" width="424" height="487" key="FileChooserDialogImpl/0.30.1440.780@0.30.1440.780" timestamp="1588342286974" />
-    <state width="1417" height="166" key="GridCell.Tab.0.bottom" timestamp="1588358276138">
+    <state width="1417" height="166" key="GridCell.Tab.0.bottom" timestamp="1588359140988">
       <screen x="0" y="30" width="1440" height="780" />
     </state>
-    <state width="1417" height="166" key="GridCell.Tab.0.bottom/0.30.1440.780@0.30.1440.780" timestamp="1588358276138" />
-    <state width="1417" height="166" key="GridCell.Tab.0.center" timestamp="1588358276137">
+    <state width="1417" height="166" key="GridCell.Tab.0.bottom/0.30.1440.780@0.30.1440.780" timestamp="1588359140988" />
+    <state width="1417" height="166" key="GridCell.Tab.0.center" timestamp="1588359140988">
       <screen x="0" y="30" width="1440" height="780" />
     </state>
-    <state width="1417" height="166" key="GridCell.Tab.0.center/0.30.1440.780@0.30.1440.780" timestamp="1588358276137" />
-    <state width="1417" height="166" key="GridCell.Tab.0.left" timestamp="1588358276137">
+    <state width="1417" height="166" key="GridCell.Tab.0.center/0.30.1440.780@0.30.1440.780" timestamp="1588359140988" />
+    <state width="1417" height="166" key="GridCell.Tab.0.left" timestamp="1588359140988">
       <screen x="0" y="30" width="1440" height="780" />
     </state>
-    <state width="1417" height="166" key="GridCell.Tab.0.left/0.30.1440.780@0.30.1440.780" timestamp="1588358276137" />
-    <state width="1417" height="166" key="GridCell.Tab.0.right" timestamp="1588358276138">
+    <state width="1417" height="166" key="GridCell.Tab.0.left/0.30.1440.780@0.30.1440.780" timestamp="1588359140988" />
+    <state width="1417" height="166" key="GridCell.Tab.0.right" timestamp="1588359140988">
       <screen x="0" y="30" width="1440" height="780" />
     </state>
-    <state width="1417" height="166" key="GridCell.Tab.0.right/0.30.1440.780@0.30.1440.780" timestamp="1588358276138" />
+    <state width="1417" height="166" key="GridCell.Tab.0.right/0.30.1440.780@0.30.1440.780" timestamp="1588359140988" />
     <state x="139" y="93" width="1152" height="657" key="MergeDialog" timestamp="1587827927412">
       <screen x="0" y="30" width="1440" height="780" />
     </state>
@@ -421,10 +429,10 @@
       <screen x="0" y="30" width="1440" height="780" />
     </state>
     <state x="305" y="60" width="992" height="733" key="SettingsEditor/0.30.1440.780@0.30.1440.780" timestamp="1588341089710" />
-    <state x="105" y="72" width="1117" height="571" key="Vcs.Push.Dialog.v2" timestamp="1588357393037">
+    <state x="105" y="72" width="1117" height="571" key="Vcs.Push.Dialog.v2" timestamp="1588358451375">
       <screen x="0" y="30" width="1440" height="780" />
     </state>
-    <state x="105" y="72" width="1117" height="571" key="Vcs.Push.Dialog.v2/0.30.1440.780@0.30.1440.780" timestamp="1588357393037" />
+    <state x="105" y="72" width="1117" height="571" key="Vcs.Push.Dialog.v2/0.30.1440.780@0.30.1440.780" timestamp="1588358451375" />
     <state x="525" y="336" width="389" height="171" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587900773318">
       <screen x="0" y="30" width="1440" height="780" />
     </state>
