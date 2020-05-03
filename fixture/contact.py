@@ -1,31 +1,17 @@
-from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 
 
-class Contacting:
-    def __init__(self):
-        self.wd = webdriver.Firefox()
-        self.wd.implicitly_wait(30)
+class ContactHelper:
 
-    def open_home_page(self):
-        wd = self.wd
-        wd.get("http://localhost/addressbook/index.php")
-
-    def login(self, username, password):
-        wd = self.wd
-        wd.find_element_by_name("user").click()
-        wd.find_element_by_name("user").clear()
-        wd.find_element_by_name("user").send_keys(username)
-        wd.find_element_by_name("pass").clear()
-        wd.find_element_by_name("pass").send_keys(password)
-        wd.find_element_by_xpath("//input[@value='Login']").click()
+    def __init__(self, app):
+        self.app = app
 
     def add_new_contact_page(self):
-        wd = self.wd
+        wd = self.app.wd
         wd.find_element_by_link_text("add new").click()
 
     def fill_contact_page(self, contact):
-        wd = self.wd
+        wd = self.app.wd
         wd.find_element_by_name("firstname").click()
         wd.find_element_by_name("firstname").clear()
         wd.find_element_by_name("firstname").send_keys(contact.firstname)
@@ -82,16 +68,9 @@ class Contacting:
         wd.find_element_by_name("notes").send_keys(contact.notes)
 
     def submit_contact_creation(self):
-        wd = self.wd
+        wd = self.app.wd
         wd.find_element_by_xpath("(//input[@name='submit'])[2]").click()
 
     def return_to_home_page(self):
-        wd = self.wd
+        wd = self.app.wd
         wd.find_element_by_link_text("home page").click()
-
-    def logout(self):
-        wd = self.wd
-        wd.find_element_by_link_text("Logout").click()
-
-    def destroy(self):
-        self.wd.quit()
