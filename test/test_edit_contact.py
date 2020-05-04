@@ -5,7 +5,7 @@ def test_edit_first_contact(app):
     app.session.login(username="admin", password="secret")
     app.contact.edit_first_contact()
     app.contact.fill_contact_page(
-        Contact(firstname="nameEdited", middlename="Edited", lastname="Edited", nickname="Edited",
+        Contact(firstname="nameEdited", middlename="Edited", lastname="ZEdited", nickname="Edited",
                 title="Edited",
                 company="Edited", address="Edited", home="Edited", mobile="777777",
                 work="Edited",
