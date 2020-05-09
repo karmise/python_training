@@ -6,6 +6,12 @@ class ContactHelper:
     def __init__(self, app):
         self.app = app
 
+    def create_new_contact(self, new_contact):
+        self.add_new_contact_page()
+        self.fill_contact_page(new_contact)
+        self.submit_contact_creation()
+        self.return_to_home_page()
+
     def add_new_contact_page(self):
         wd = self.app.wd
         wd.find_element_by_link_text("add new").click()
@@ -79,9 +85,12 @@ class ContactHelper:
         # submit deletion
         wd.switch_to_alert().accept()
 
-    def edit_first_contact(self):
+    def edit_first_contact(self, cont):
         wd = self.app.wd
         wd.find_element_by_xpath("//img[@alt='Edit']").click()
+        self.fill_contact_page(cont)
+        self.submit_contact_edition()
+        self.return_to_home_page()
 
     def submit_contact_edition(self):
         wd = self.app.wd
