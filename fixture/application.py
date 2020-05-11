@@ -8,7 +8,6 @@ from webdriver_manager.chrome import ChromeDriverManager
 class Application:
     def __init__(self):
         self.wd = webdriver.Chrome(ChromeDriverManager().install())
-        self.wd.implicitly_wait(3)
         self.session = SessionHelper(self)
         self.group = GroupHelper(self)
         self.contact = ContactHelper(self)
