@@ -14,10 +14,11 @@ def test_edit_first_contact(app):
                       aday="1", amonth="September", ayear="2007", address2="Edited",
                       phone2="Edited",
                       notes="Edited")
-    contact.id = old_contacts[0].id
     if app.contact.count() == 0:
         app.contact.create_new_contact(
             Contact(bday="3", bmonth="August", aday="13", amonth="July"))
+        old_contacts = app.contact.get_contact_list()
+    contact.id = old_contacts[0].id
     app.contact.edit_first_contact(contact)
     new_contacts = app.contact.get_contact_list()
     assert len(old_contacts) == len(new_contacts)
