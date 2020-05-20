@@ -2,12 +2,11 @@ from selenium import webdriver
 from fixture.session import SessionHelper
 from fixture.group import GroupHelper
 from fixture.contact import ContactHelper
-from webdriver_manager.chrome import ChromeDriverManager
 
 
 class Application:
     def __init__(self):
-        self.wd = webdriver.Chrome(ChromeDriverManager().install())
+        self.wd = webdriver.Chrome(executable_path="/home/denis/Education/python_training/chromedriver")
         self.session = SessionHelper(self)
         self.group = GroupHelper(self)
         self.contact = ContactHelper(self)

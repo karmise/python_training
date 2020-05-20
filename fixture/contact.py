@@ -73,14 +73,17 @@ class ContactHelper:
         wd = self.app.wd
         wd.find_elements_by_name("selected[]")[index].click()
 
+    def select_contact_to_edit_by_index(self, index):
+        wd = self.app.wd
+        elements = wd.find_elements_by_xpath("//img[@alt='Edit']")
+        elements[index].click()
+
     def edit_first_contact(self):
         self.select_contact_by_index(0)
 
     def edit_contact_by_index(self, index, cont):
         self.return_to_home_page()
-        wd = self.app.wd
-        self.select_contact_by_index(index)
-        wd.find_element_by_xpath("//img[@alt='Edit']").click()
+        self.select_contact_to_edit_by_index(index)
         self.fill_contact_page(cont)
         self.submit_contact_edition()
         self.return_to_home_page()
