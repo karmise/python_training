@@ -40,6 +40,8 @@ class ContactHelper:
         self.change_field("work", contact.work)
         self.change_field("fax", contact.fax)
         self.change_field("email", contact.email)
+        self.change_field("email2", contact.email2)
+        self.change_field("email3", contact.email3)
         self.change_field("homepage", contact.homepage)
         self.change_field("address2", contact.address2)
         self.change_field("phone2", contact.phone2)
