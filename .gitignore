@@ -124,9 +124,8 @@ venv.bak/
 .mypy_cache/
 .dmypy.json
 dmypy.json
+.idea/
 
 # Pyre type checker
 .pyre/
 chromedriver
-
-.idea
