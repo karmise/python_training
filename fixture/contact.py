@@ -72,9 +72,24 @@ class ContactHelper:
         wd.switch_to_alert().accept()
         self.contact_cache = None
 
+    def delete_contact_by_id(self, id):
+        wd = self.app.wd
+        self.return_to_home_page()
+        self.select_contact_by_id(id)
+        wd.find_element_by_xpath("(//input[@value='Delete'])").click()
+        # submit deletion
+        wd.switch_to.alert.accept()
+        self.return_to_home_page()
+        self.contact_cache = None
+
     def select_contact_by_index(self, index):
         wd = self.app.wd
         wd.find_elements_by_name("selected[]")[index].click()
+
+    def select_contact_by_id(self, id):
+        self.return_to_home_page()
+        wd = self.app.wd
+        wd.find_element_by_css_selector("input[value='%s']" % id).click()
 
     def select_contact_to_edit_by_index(self, index):
         self.return_to_home_page()
@@ -82,12 +97,26 @@ class ContactHelper:
         elements = wd.find_elements_by_xpath("//img[@alt='Edit']")
         elements[index].click()
 
+    def select_contact_to_edit_by_id(self, id):
+        wd = self.app.wd
+        self.return_to_home_page()
+        self.select_contact_by_id(id)
+        wd.find_element_by_css_selector("a[href='edit.php?id=%s']" % id).click()
+
     def edit_first_contact(self):
         self.select_contact_by_index(0)
 
     def edit_contact_by_index(self, index, cont):
         self.return_to_home_page()
         self.select_contact_to_edit_by_index(index)
+        self.fill_contact_page(cont)
+        self.submit_contact_edition()
+        self.return_to_home_page()
+        self.contact_cache = None
+
+    def edit_contact_by_id(self, id, cont):
+        self.return_to_home_page()
+        self.select_contact_to_edit_by_id(id)
         self.fill_contact_page(cont)
         self.submit_contact_edition()
         self.return_to_home_page()
@@ -162,3 +191,5 @@ class ContactHelper:
         work = re.search("W: (.*)", text).group(1)
         phone2 = re.search("P: (.*)", text).group(1)
         return Contact(home=home, mobile=mobile, work=work, phone2=phone2)
+
+
