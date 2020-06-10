@@ -20,7 +20,7 @@ def test_edit_contact_by_index(app, db):
     old_contacts = db.get_contact_list()
     modified_contact = random.choice(old_contacts)
     contact.id = modified_contact.id
-    app.contact.edit_contact_by_id(contact, contact.id)
+    app.contact.edit_contact_by_id(contact.id, contact)
     new_contacts = db.get_contact_list()
     assert len(old_contacts) == len(new_contacts)
     new_contacts = db.get_contact_list()
