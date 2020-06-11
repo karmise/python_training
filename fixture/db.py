@@ -35,8 +35,8 @@ class DbFixture:
                  address, home, mobile, work, fax, email, email2, email3,
                  homepage, bday, bmonth, byear, aday, amonth, ayear,
                  address2, phone2, notes) = row
-                list.append(Contact(id=id, firstname=firstname, middlename=middlename, lastname=lastname, nickname=nickname,
-                                    title=title, company=company,
+                list.append(Contact(id=id, firstname=firstname, middlename=middlename, lastname=lastname,
+                                    nickname=nickname, title=title, company=company,
                                     address=address, home=home, mobile=mobile, work=work, fax=fax, email=email,
                                     email2=email2, email3=email3,
                                     homepage=homepage, bday=bday, bmonth=bmonth, byear=byear, aday=aday, amonth=amonth,
