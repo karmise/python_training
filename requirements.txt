@@ -4,5 +4,7 @@ selenium
 jsonpickle
 pony
 pymysql
-mysql-connector-python-rf
+mysql-connector-python-rf2
 webdriver-manager
+pytest-allure-adaptor
+allure_pytest
